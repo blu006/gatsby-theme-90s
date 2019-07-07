@@ -1,4 +1,4 @@
-# Gatsby Theme Jam Example Submission
+# monochrome theme for Gatsby
 
 This is a bare-bones Gatsby theme to showcase how a [Theme Jam](https://themejam.gatsbyjs.org) submission should look.
 

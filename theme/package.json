@@ -7,6 +7,10 @@
   },
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
+  },
   "license": "MIT",
   "peerDependencies": {
     "gatsby": "^2.13.1",
@@ -22,6 +26,8 @@
     "@emotion/core": "^10.0.14",
     "@mdx-js/react": "^1.0.21",
     "gatsby-plugin-theme-ui": "^0.2.2",
+    "gatsby-source-filesystem": "^2.1.2",
+    "gatsby-transformer-yaml": "^2.2.0",
     "theme-ui": "^0.2.2"
   },
   "keywords": [
