@@ -1,6 +1,6 @@
 import React from "react"
 import { css, Global } from "@emotion/core"
-import { Layout as StyledLayout, Header, Main, Container } from "theme-ui"
+import { Layout as ThemeLayout, Header, Main, Container } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Layout = ({ children }) => {
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <StyledLayout>
+    <ThemeLayout>
       <Global
         styles={css`
           body {
@@ -24,12 +24,12 @@ const Layout = ({ children }) => {
         `}
       />
       <Header>
-        <span>{data.site.siteMetadata.title}</span>
+        <h1>{data.site.siteMetadata.title}</h1>
       </Header>
       <Main>
         <Container>{children}</Container>
       </Main>
-    </StyledLayout>
+    </ThemeLayout>
   )
 }
 

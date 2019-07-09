@@ -5,9 +5,9 @@ import { Styled } from "theme-ui"
 const ProjectList = ({ projects }) => (
   <>
     <Styled.h1>My Projects</Styled.h1>
-    <ul>
+    <Styled.ul>
       {projects.map(project => (
-        <li key={project.id}>
+        <Styled.li key={project.id}>
           <strong>
             <Link to={project.slug}>{project.name}</Link>
           </strong>
@@ -17,9 +17,9 @@ const ProjectList = ({ projects }) => (
             day: "numeric",
             year: "numeric",
           })}
-        </li>
+        </Styled.li>
       ))}
-    </ul>
+    </Styled.ul>
   </>
 )
 
