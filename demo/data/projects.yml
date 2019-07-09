@@ -1,0 +1,14 @@
+- name: test project
+  body: This is my very first portfolio project and it is very exciting to share with you all my content!
+  date: 2019-07-04
+  tags: [portfolio, project, first, new]
+
+- name: test project 2
+  body: Wow, second portfolio project already! Time sure flies by.
+  date: 2019-07-05
+  tags: [portfolio, project, second]
+
+- name: test project 3
+  body: Wow, 3rd portfolio project already! Time sure flies by.
+  date: 2019-07-06
+  tags: [portfolio, project, 3rd]

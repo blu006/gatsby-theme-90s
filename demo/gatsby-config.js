@@ -5,5 +5,13 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-theme-monochrome"],
+  plugins: [
+    {
+      resolve: "gatsby-theme-monochrome",
+      options: {
+        contentPath: "data",
+        basePath: "/",
+      },
+    },
+  ],
 }

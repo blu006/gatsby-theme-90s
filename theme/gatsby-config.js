@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ contentPath = "data", basePath = "/" }) => ({
   siteMetadata: {
     title: "Gatsby Theme Monochrome",
     author: `Jackie Luc`,
@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "data",
+        path: contentPath,
       },
     },
     {
@@ -19,4 +19,4 @@ module.exports = {
       },
     },
   ],
-}
+})
