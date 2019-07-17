@@ -1,8 +1,8 @@
 module.exports = ({ contentPath = "data", basePath = "/" }) => ({
   siteMetadata: {
-    title: "Gatsby Theme Monochrome",
+    title: "Gatsby Theme 90s",
     author: `Jackie Luc`,
-    description: `Monochrome is a Gatsby Theme.`,
+    description: `90s is a Gatsby Theme with a flash from the past.`,
   },
   plugins: [
     "gatsby-plugin-theme-ui",

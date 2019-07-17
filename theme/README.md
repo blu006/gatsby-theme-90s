@@ -1,8 +1,6 @@
-# monochrome theme for Gatsby
+# 90s theme for Gatsby
 
-This is a bare-bones Gatsby theme to showcase how a [Theme Jam](https://themejam.gatsbyjs.org) submission should look.
-
-See the [live demo](https://gatsby-theme-monochrome.netlify.com)
+See the [live demo](https://gatsby-theme-90s.netlify.com)
 
 ## Installation
 
@@ -11,14 +9,14 @@ To use this theme in your Gatsby sites, follow these instructions:
 1.  Install the theme
 
     ```sh
-    npm install --save gatsby-theme-monochrome
+    npm install --save gatsby-theme-90s
     ```
 
 2.  Add the theme to your `gatsby-config.js`:
 
     ```js
     module.exports = {
-      plugins: ["gatsby-theme-monochrome"],
+      plugins: ["gatsby-theme-90s"],
     }
     ```
 

@@ -1,9 +1,9 @@
 {
-  "name": "@jackieluc/gatsby-theme-monochrome",
+  "name": "gatsby-theme-90s",
   "author": "Jackie Luc <jackieluc17@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackieluc/gatsby-theme-monochrome.git"
+    "url": "https://github.com/jackieluc/gatsby-theme-90s.git"
   },
   "version": "1.0.0",
   "main": "index.js",
@@ -34,8 +34,9 @@
     "gatsby",
     "gatsby-theme",
     "gatsby-plugin",
-    "gatsby-theme-monochrome",
-    "monochrome",
+    "gatsby-theme-90s",
+    "90s",
+    "1990s",
     "theme"
   ]
 }

@@ -1,4 +1,4 @@
-import { theme as baseTheme } from "@jackieluc/gatsby-theme-monochrome/src/theme"
+import { theme as baseTheme } from "gatsby-theme-90s/src/theme"
 
 export const theme = {
   ...baseTheme,

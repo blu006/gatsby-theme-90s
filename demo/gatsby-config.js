@@ -7,7 +7,7 @@
 module.exports = {
   plugins: [
     {
-      resolve: "@jackieluc/gatsby-theme-monochrome",
+      resolve: "gatsby-theme-90s",
       options: {
         contentPath: "data",
         basePath: "/",
