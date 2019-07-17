@@ -1,5 +1,11 @@
 # Gatsby Theme Jam Submission Example
 
+// todo:
+
+[ ] link to theme
+[ ] link to demo site
+[ ] demo site, add link back to repo / find out more
+
 This repo is an example and potential starting point for theme creators.
 
 It includes:

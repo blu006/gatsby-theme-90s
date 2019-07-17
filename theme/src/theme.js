@@ -10,12 +10,15 @@ export const theme = {
   },
   colors: {
     gray: ["#efefef", "#ddd", "#333", "#111"],
+    navbar: "#0000ce",
     background: "#fff",
-    primary: "rebeccapurple",
+    primary: "#ffcc01",
+    blues: ["#3000ce", "#6363ff"],
   },
   sizes: {
     default: "90vw",
     max: "540px",
+    widthMax: "100%",
   },
   styles: {
     Layout: {
@@ -25,13 +28,25 @@ export const theme = {
       lineHeight: "body",
     },
     Header: {
-      backgroundColor: "primary",
-      color: "background",
+      backgroundColor: "navbar",
+      color: "primary",
       fontWeight: "bold",
-      margin: "0 auto",
-      maxWidth: "max",
-      padding: 3,
-      width: "default",
+      fontSize: 2,
+      display: "flex",
+      justifyContent: "center",
+      maxWidth: "widthMax",
+      padding: 2,
+      width: "widthMax",
+      ul: {
+        display: "flex",
+        justifyContent: "center",
+        li: {
+          margin: "0 15px",
+          a: {
+            color: "primary",
+          },
+        },
+      },
     },
     Main: {
       margin: "0 auto",
