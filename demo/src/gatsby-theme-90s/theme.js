@@ -10,7 +10,7 @@ export const theme = {
     Layout: {
       ...baseTheme.styles.Layout,
       ".tiny-banner": {
-        color: "white",
+        color: "primary",
         fontSize: "12px",
         padding: "0",
         position: "absolute",
