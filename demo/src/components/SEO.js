@@ -28,6 +28,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
           <Helmet title={seo.title}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
+            <link rel="icon" type="image/gif" href={seo.image} />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && (
               <meta property="og:type" content="article" />

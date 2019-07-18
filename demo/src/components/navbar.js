@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="Navbar" role="navigation">
       <ul>
         {data.site.siteMetadata.navHeaders.map(link => (
-          <li>
+          <li key={link}>
             <a href="#">{link}</a>
           </li>
         ))}

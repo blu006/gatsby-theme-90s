@@ -8,8 +8,8 @@ export const query = graphql`
     project(id: { eq: $projectID }) {
       name
       body
-      date(formatString: "MMMM D, YYYY")
-      tags
+      link
+      slug
     }
   }
 `

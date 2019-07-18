@@ -15,10 +15,9 @@ exports.sourceNodes = ({ actions }) => {
     type Project implements Node @dontInfer {
       id: ID!
       name: String!
-      date: Date! @dateformat
       body: String!
-      tags: [String]!
       slug: String!
+      link: String
     }
   `)
 }
@@ -30,6 +29,7 @@ exports.createResolvers = ({ createResolvers }, options) => {
   const slugify = str => {
     const slug = str
       .toLowerCase()
+      .replace(/\?+/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/(^-|-$)+/g, "")
 
@@ -55,9 +55,10 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
   const result = await graphql(`
     query {
-      allProject(sort: { fields: date, order: ASC }) {
+      allProject {
         nodes {
           id
+          link
           slug
         }
       }
@@ -73,12 +74,16 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
   projects.forEach(project => {
     const slug = project.slug
-    actions.createPage({
-      path: slug,
-      component: require.resolve("./src/templates/project.js"),
-      context: {
-        projectID: project.id,
-      },
-    })
+
+    // Create a new page if an external link doesn't exist
+    if (!project.link) {
+      actions.createPage({
+        path: slug,
+        component: require.resolve("./src/templates/project.js"),
+        context: {
+          projectID: project.id,
+        },
+      })
+    }
   })
 }

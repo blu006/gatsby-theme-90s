@@ -4,19 +4,18 @@ import { Styled } from "theme-ui"
 
 const ProjectList = ({ projects }) => (
   <>
-    <Styled.h1>My Projects</Styled.h1>
     <Styled.ul>
       {projects.map(project => (
         <Styled.li key={project.id}>
           <strong>
-            <Link to={project.slug}>{project.name}</Link>
+            {project.link ? (
+              <a href={project.link}>{project.name}</a>
+            ) : (
+              <Link to={project.slug}>{project.name}</Link>
+            )}
           </strong>
           <br />
-          {new Date(project.date).toLocaleDateString("en-US", {
-            month: "long",
-            day: "numeric",
-            year: "numeric",
-          })}
+          {project.link}
         </Styled.li>
       ))}
     </Styled.ul>

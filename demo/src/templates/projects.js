@@ -6,13 +6,12 @@ import ProjectList from "../components/project-list"
 const ProjectsTemplate = () => {
   const data = useStaticQuery(graphql`
     query {
-      allProject(sort: { fields: date, order: ASC }) {
+      allProject {
         nodes {
           id
           name
-          date
           body
-          tags
+          link
           slug
         }
       }
