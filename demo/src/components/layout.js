@@ -2,6 +2,7 @@ import React from "react"
 import { css, Global } from "@emotion/core"
 import { Layout as ThemeLayout, Header, Main, Container } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
+import SEO from "./SEO"
 import Navbar from "./navbar"
 
 const Layout = ({ children }) => {
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeLayout>
+      <SEO />
       <Global
         styles={css`
           body {

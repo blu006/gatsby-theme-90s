@@ -44,6 +44,9 @@ export const theme = {
           margin: "0 15px",
           a: {
             color: "primary",
+            textShadow: "2px 2px 1px black",
+            letterSpacing: "2px",
+            textDecoration: "none",
           },
         },
       },

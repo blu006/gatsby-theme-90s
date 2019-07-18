@@ -3,15 +3,6 @@ module.exports = ({ contentPath = "data", basePath = "/" }) => ({
     title: "Gatsby Theme 90s",
     author: `Jackie Luc`,
     description: `90s is a Gatsby Theme with a flash from the past.`,
-    navHeaders: [
-      "Home",
-      "Weekly Ad",
-      "Product Info",
-      "Services",
-      "Locations",
-      "Company Info",
-      "Index",
-    ],
   },
   plugins: [
     "gatsby-plugin-theme-ui",

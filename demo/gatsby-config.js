@@ -5,6 +5,22 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Gatsby Theme 90s Demo",
+    author: `Jackie Luc`,
+    description: `90s is a Gatsby Theme with a flash from the past.`,
+    url: "https://gatsby-theme-90s.netlify.com/",
+    image: "/favicon.ico",
+    navHeaders: [
+      "Home",
+      "Weekly Ad",
+      "Product Info",
+      "Services",
+      "Locations",
+      "Company Info",
+      "Index",
+    ],
+  },
   plugins: [
     {
       resolve: "gatsby-theme-90s",
