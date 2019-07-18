@@ -1,5 +1,5 @@
 export const theme = {
-  space: [0, 4, 8, 16, 32],
+  space: [0, 4, 8, 16, 20, 32],
   fonts: {
     header: "Sunshiney",
     body:
@@ -13,9 +13,8 @@ export const theme = {
   colors: {
     gray: ["#efefef", "#ddd", "#333", "#111"],
     navbar: "#0000ce",
-    background: "#fff",
+    background: ["#3000ce", "#6363ff"],
     primary: "#ffcc01",
-    blues: ["#3000ce", "#6363ff"],
   },
   sizes: {
     default: "90vw",
@@ -36,7 +35,7 @@ export const theme = {
         display: "flex",
         justifyContent: "center",
         maxWidth: "widthMax",
-        padding: 2,
+        padding: "20px 10px 10px 10px",
         width: "widthMax",
         ul: {
           display: "flex",

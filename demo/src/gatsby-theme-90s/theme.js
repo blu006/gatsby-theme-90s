@@ -7,6 +7,17 @@ export const theme = {
   },
   styles: {
     ...baseTheme.styles,
+    Layout: {
+      ...baseTheme.styles.Layout,
+      ".tiny-banner": {
+        color: "white",
+        fontSize: "12px",
+        padding: "0",
+        position: "absolute",
+        textAlign: "center",
+        width: "100%",
+      },
+    },
     Main: {
       ...baseTheme.styles.Main,
     },

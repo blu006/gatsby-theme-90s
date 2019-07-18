@@ -32,6 +32,9 @@ const Layout = ({ children }) => {
           }
         `}
       />
+      <p className="tiny-banner" role="banner">
+        the official demo website of the Gatsby Theme 90s
+      </p>
       <Navbar />
       <Header>
         <h1>{data.site.siteMetadata.title}</h1>
