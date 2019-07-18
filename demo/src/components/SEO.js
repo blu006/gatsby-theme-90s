@@ -38,6 +38,10 @@ const SEO = ({ title, description, image, pathname, article }) => (
             )}
             {seo.image && <meta property="og:image" content={seo.image} />}
             <html lang="en-US" />
+            <link
+              href="https://fonts.googleapis.com/css?family=Sunshiney&display=swap"
+              rel="stylesheet"
+            />
           </Helmet>
         </>
       )

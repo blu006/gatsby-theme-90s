@@ -1,7 +1,9 @@
 export const theme = {
   space: [0, 4, 8, 16, 32],
   fonts: {
-    body: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
+    header: "Sunshiney",
+    body:
+      "Arial, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif",
   },
   fontSizes: [16, 18, 20, 22, 27, 36],
   lineHeights: {
@@ -26,29 +28,34 @@ export const theme = {
       fontFamily: "body",
       fontSize: 1,
       lineHeight: "body",
-    },
-    Header: {
-      backgroundColor: "navbar",
-      color: "primary",
-      fontWeight: "bold",
-      fontSize: 2,
-      display: "flex",
-      justifyContent: "center",
-      maxWidth: "widthMax",
-      padding: 2,
-      width: "widthMax",
-      ul: {
+      nav: {
+        backgroundColor: "navbar",
+        color: "primary",
+        fontWeight: "bold",
+        fontSize: 2,
         display: "flex",
         justifyContent: "center",
-        li: {
-          margin: "0 15px",
-          a: {
-            color: "primary",
-            textShadow: "2px 2px 1px black",
-            letterSpacing: "2px",
-            textDecoration: "none",
+        maxWidth: "widthMax",
+        padding: 2,
+        width: "widthMax",
+        ul: {
+          display: "flex",
+          justifyContent: "center",
+          li: {
+            margin: "0 15px",
+            a: {
+              color: "primary",
+              textShadow: "2px 2px 1px black",
+              letterSpacing: "2px",
+              textDecoration: "none",
+            },
           },
         },
+      },
+    },
+    Header: {
+      h1: {
+        fontFamily: "header",
       },
     },
     Main: {
@@ -57,6 +64,9 @@ export const theme = {
       width: "default",
     },
     Container: {
+      padding: 3,
+    },
+    Footer: {
       padding: 3,
     },
     h1: {

@@ -17,7 +17,7 @@ const Navbar = () => {
   `)
 
   return (
-    <nav className="Navbar">
+    <nav className="Navbar" role="navigation">
       <ul>
         {data.site.siteMetadata.navHeaders.map(link => (
           <li>

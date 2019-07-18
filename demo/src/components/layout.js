@@ -1,6 +1,12 @@
 import React from "react"
 import { css, Global } from "@emotion/core"
-import { Layout as ThemeLayout, Header, Main, Container } from "theme-ui"
+import {
+  Layout as ThemeLayout,
+  Header,
+  Main,
+  Container,
+  Footer,
+} from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import SEO from "./SEO"
 import Navbar from "./navbar"
@@ -26,13 +32,15 @@ const Layout = ({ children }) => {
           }
         `}
       />
+      <Navbar />
       <Header>
-        <Navbar />
+        <h1>{data.site.siteMetadata.title}</h1>
       </Header>
       <Main>
-        <h1>{data.site.siteMetadata.title}</h1>
+        {/* <Sidebar /> */}
         <Container>{children}</Container>
       </Main>
+      <Footer />
     </ThemeLayout>
   )
 }
