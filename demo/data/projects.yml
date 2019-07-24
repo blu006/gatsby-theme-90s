@@ -1,13 +1,13 @@
 - name: GitHub Repository
   body: Want to see how this cool Gatsby theme was built? Check out the project on GitHub!!!
   link: https://github.com/jackieluc/gatsby-theme-90s
-  image: images/bullet.png
+  image: images/Tvnanim.gif
 
 - name: NPM
   body: Check out how to install this cool Gatsby theme and use it for your next website!!!
   link: https://www.npmjs.com/package/gatsby-theme-90s
-  image: images/bullet.png
+  image: images/News.gif
 
 - name: WHY???
   body: Find out why I built this theme and what the motivation was from.
-  image: images/bullet.png
+  image: images/Sweep.gif

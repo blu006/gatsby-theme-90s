@@ -37,7 +37,7 @@ export const theme = {
         display: "flex",
         justifyContent: "center",
         maxWidth: "widthMax",
-        padding: "20px 10px 10px 10px",
+        padding: "20px 0 10px 0",
         width: "widthMax",
         ul: {
           display: "flex",
@@ -55,6 +55,8 @@ export const theme = {
       },
     },
     Header: {
+      display: "flex",
+      justifyContent: "center",
       h1: {
         fontFamily: "header",
       },
@@ -69,6 +71,12 @@ export const theme = {
     },
     Container: {
       padding: 3,
+      ul: {
+        display: "grid",
+        gridGap: "25px",
+        gridTemplateColumns: "1fr 1fr",
+        gridTemplateRows: "auto",
+      },
     },
     Footer: {
       padding: 3,
@@ -81,6 +89,9 @@ export const theme = {
       margin: 0,
       padding: 3,
       marginTop: 3,
+      textShadow: "2px 2px 1px black",
+      letterSpacing: "2px",
+      background: "transparent",
     },
     h2: {
       color: "primary",
@@ -90,6 +101,8 @@ export const theme = {
       margin: 0,
       padding: 3,
       marginTop: 3,
+      textShadow: "2px 2px 1px black",
+      letterSpacing: "2px",
     },
     h3: {
       color: "primary",
@@ -99,22 +112,24 @@ export const theme = {
       margin: 0,
       padding: 3,
       marginTop: 3,
+      textShadow: "2px 2px 1px black",
+      letterSpacing: "2px",
     },
     ul: {
-      borderTop: "1px solid",
-      borderColor: "gray.0",
       listStyle: "none",
       padding: 0,
     },
     li: {
-      borderBottom: "1px solid",
-      borderColor: "gray.0",
+      display: "flex",
       padding: 2,
       "&:focus-within, &:hover": {
         backgroundColor: "primary",
         p: {
           color: "gray.0",
         },
+      },
+      img: {
+        paddingRight: 2,
       },
     },
   },

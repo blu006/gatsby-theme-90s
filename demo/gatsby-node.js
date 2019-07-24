@@ -18,6 +18,7 @@ exports.sourceNodes = ({ actions }) => {
       body: String!
       slug: String!
       link: String
+      image: String!
     }
   `)
 }
