@@ -1,3 +1,5 @@
+const backgroundGradient = ["#3000ce", "#6363ff"]
+
 export const theme = {
   space: [0, 4, 8, 16, 20, 32],
   fonts: {
@@ -13,7 +15,7 @@ export const theme = {
   colors: {
     gray: ["#efefef", "#ddd", "#333", "#111"],
     navbar: "#0000ce",
-    background: ["#3000ce", "#6363ff"],
+    background: backgroundGradient,
     primary: "#ffcc01",
   },
   sizes: {
@@ -58,9 +60,12 @@ export const theme = {
       },
     },
     Main: {
+      background: `linear-gradient(to left, ${backgroundGradient[0]}, ${
+        backgroundGradient[1]
+      })`,
       margin: "0 auto",
-      maxWidth: "max",
-      width: "default",
+      maxWidth: "widthMax",
+      width: "widthMax",
     },
     Container: {
       padding: 3,
@@ -69,11 +74,30 @@ export const theme = {
       padding: 3,
     },
     h1: {
-      color: "gray.3",
+      color: "primary",
       fontSize: 5,
       fontWeight: "bold",
       lineHeight: "heading",
       margin: 0,
+      padding: 3,
+      marginTop: 3,
+    },
+    h2: {
+      color: "primary",
+      fontSize: 4,
+      fontWeight: "bold",
+      lineHeight: "heading",
+      margin: 0,
+      padding: 3,
+      marginTop: 3,
+    },
+    h3: {
+      color: "primary",
+      fontSize: 3,
+      fontWeight: "bold",
+      lineHeight: "heading",
+      margin: 0,
+      padding: 3,
       marginTop: 3,
     },
     ul: {
@@ -87,7 +111,10 @@ export const theme = {
       borderColor: "gray.0",
       padding: 2,
       "&:focus-within, &:hover": {
-        backgroundColor: "gray.0",
+        backgroundColor: "primary",
+        p: {
+          color: "gray.0",
+        },
       },
     },
   },

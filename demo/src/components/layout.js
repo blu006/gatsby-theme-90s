@@ -7,6 +7,7 @@ import {
   Container,
   Footer,
 } from "theme-ui"
+import { Styled } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import SEO from "./SEO"
 import Navbar from "./navbar"
@@ -36,14 +37,14 @@ const Layout = ({ children }) => {
         the official demo website of the Gatsby Theme 90s
       </p>
       <Navbar />
-      <Header>
-        <h1>{data.site.siteMetadata.title}</h1>
-      </Header>
       <Main>
+        <Header>
+          <Styled.h1>{data.site.siteMetadata.title}</Styled.h1>
+        </Header>
         {/* <Sidebar /> */}
         <Container>{children}</Container>
+        <Footer />
       </Main>
-      <Footer />
     </ThemeLayout>
   )
 }
