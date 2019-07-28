@@ -1,6 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import { Styled } from "theme-ui"
+
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 
 const ProjectList = ({ projects }) => (
   <>
@@ -9,15 +11,16 @@ const ProjectList = ({ projects }) => (
         <Styled.li key={project.id}>
           <img src={project.image} alt={project.name} />
           <div class="project-info">
-            <strong>
-              {project.link ? (
-                <a href={project.link}>{project.name}</a>
-              ) : (
-                <Link to={project.slug}>{project.name}</Link>
-              )}
-            </strong>
-            <br />
-            <p>{project.link}</p>
+            <Styled.h3>{project.name}</Styled.h3>
+            {project.link ? (
+              <Styled.a href={project.link} sx={{ padding: "16px" }}>
+                {project.body}
+              </Styled.a>
+            ) : (
+              <Styled.a href={project.slug} sx={{ padding: "16px" }}>
+                {project.body}
+              </Styled.a>
+            )}
           </div>
         </Styled.li>
       ))}
