@@ -12,6 +12,7 @@ const ProjectsTemplate = () => {
           name
           body
           link
+          image
           slug
         }
       }

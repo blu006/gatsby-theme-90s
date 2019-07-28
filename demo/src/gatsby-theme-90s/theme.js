@@ -16,6 +16,9 @@ export const theme = {
         position: "absolute",
         textAlign: "center",
         width: "100%",
+        textShadow: "2px 2px 1px black",
+        letterSpacing: "2px",
+        background: baseTheme.colors.navbar,
       },
     },
     Main: {
