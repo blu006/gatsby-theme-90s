@@ -17,7 +17,7 @@ const ProjectList = ({ projects }) => (
               )}
             </strong>
             <br />
-            {project.link}
+            <p>{project.link}</p>
           </div>
         </Styled.li>
       ))}

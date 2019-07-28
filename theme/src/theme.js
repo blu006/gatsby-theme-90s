@@ -42,6 +42,7 @@ export const theme = {
         ul: {
           display: "flex",
           justifyContent: "center",
+          flexWrap: "wrap",
           li: {
             margin: "0 15px",
             a: {
@@ -74,7 +75,7 @@ export const theme = {
       ul: {
         display: "grid",
         gridGap: "25px",
-        gridTemplateColumns: "1fr 1fr",
+        gridTemplateColumns: ["1fr", "1fr 1fr"],
         gridTemplateRows: "auto",
       },
     },
@@ -121,6 +122,7 @@ export const theme = {
     },
     li: {
       display: "flex",
+      flexDirection: ["column", "row"],
       padding: 2,
       "&:focus-within, &:hover": {
         backgroundColor: "primary",
@@ -130,6 +132,8 @@ export const theme = {
       },
       img: {
         paddingRight: 2,
+        maxWidth: "50px",
+        height: "100%",
       },
     },
   },
