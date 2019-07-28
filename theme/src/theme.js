@@ -17,6 +17,7 @@ export const theme = {
     navbar: "#0000ce",
     background: backgroundGradient,
     primary: "#ffcc01",
+    hover: "#27e666",
   },
   sizes: {
     default: "90vw",
@@ -125,7 +126,7 @@ export const theme = {
       flexDirection: ["column", "row"],
       padding: 2,
       "&:focus-within, &:hover": {
-        backgroundColor: "primary",
+        backgroundColor: "hover",
         p: {
           color: "gray.0",
         },
@@ -139,7 +140,7 @@ export const theme = {
     a: {
       color: "#fff",
       "&:visited": {
-        color: "#333",
+        color: "gray.2",
       },
     },
   },
