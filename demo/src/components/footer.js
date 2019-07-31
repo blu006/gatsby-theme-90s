@@ -18,7 +18,7 @@ const Footer = () => {
   const projects = data.allProject.nodes
 
   return (
-    <footer role="contentinfo">
+    <div>
       <hr />
       <ul>
         {projects.map(project => {
@@ -49,7 +49,7 @@ const Footer = () => {
           </Styled.a>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
 

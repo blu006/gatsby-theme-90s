@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
           <Styled.h1>{data.site.siteMetadata.title}</Styled.h1>
         </Header>
         <Container>{children}</Container>
-        <FooterTheme>
+        <FooterTheme role="contentinfo">
           <Footer />
         </FooterTheme>
       </Main>

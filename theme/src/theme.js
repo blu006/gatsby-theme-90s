@@ -99,9 +99,8 @@ export const theme = {
     },
     Footer: {
       gridArea: "footer",
-      padding: "0",
-      display: "flex",
-      justifyContent: "center",
+      maxWidth: "600px",
+      margin: "0 auto",
       ul: {
         display: "flex",
         justifyContent: "space-evenly",
