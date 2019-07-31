@@ -1,49 +1,93 @@
-# 90s theme for Gatsby
+# gatsby-theme-90s
 
-See the [live demo](https://gatsby-theme-90s.netlify.com)
+This is a Gatsby theme project that pays homage to the old roots of the web! Please note that `gatsby-theme-90s` has a dependency on [theme-ui](https://theme-ui.com/getting-started).
+
+Check out the [live demo](https://gatsby-theme-90s.netlify.com)!
 
 ## Installation
 
 To use this theme in your Gatsby sites, follow these instructions:
 
-1.  Install the theme
+1. Install the theme
 
-    ```sh
-    npm install --save gatsby-theme-90s
-    ```
+   ```sh
+   npm install --save gatsby-theme-90s
+   ```
 
-2.  Add the theme to your `gatsby-config.js`:
+2. Add the theme to your `gatsby-config.js`:
 
-    ```js
-    module.exports = {
-      plugins: ["gatsby-theme-90s"],
-    }
-    ```
+```js
+module.exports = {
+  plugins: ["gatsby-theme-90s"],
+}
+```
 
-3.  Start your site
-    ```sh
-    gatsby develop
-    ```
+4.Start your site
 
-## Submission Checklist
+```sh
+gatsby develop
+```
 
-To ensure your Theme Jam submission [follows the rules](https://themejam.gatsbyjs.org/rules), use this checklist:
+## Usage
 
-- [ ] Use our [accessibility guide][a11y] to ensure your site meets our accessibility standards
-- [ ] Run a performance audit using [Lighthouse][] and/or [WebPageTest][]
-- [ ] Set up a live demo using [Netlify][] or [GitHub Pages][]
-- [ ] Add installation documentation to the README
-- [x] Update the `name` field in `package.json`
-- [x] Update the `author` field in `package.json`
-- [x] Update the `repository` field in `package.json`
-- [x] Make sure the theme’s `keywords` in `package.json` include `gatsby`, `gatsby-theme`, and `gatsby-plugin`
-- [ ] Publish your theme to npm ([docs][npmpublish])
-- [ ] Submit your theme at https://themejam.gatsbyjs.org
+If you wish to use the layout of the theme, please set up the Layout as follows. If you follow this markup structure, it will be a frictionless experience with using the theme.
 
-[a11y]: https://gatsbyjs.org/docs/making-your-site-accessible#how-to-improve-accessibility
-[lighthouse]: https://developers.google.com/web/tools/lighthouse/
-[axe]: https://www.deque.com/axe/
-[webpagetest]: http://webpagetest.org/
-[netlify]: https://netlify.com
-[github pages]: https://pages.github.com/
-[npmpublish]: https://docs.npmjs.com/cli/publish
+```javascript
+import React from "react"
+import {
+  Layout as ThemeLayout,
+  Header,
+  Main,
+  Container,
+  Footer as FooterTheme,
+} from "theme-ui"
+
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+
+const Layout = ({ children }) => {
+  return (
+    <ThemeLayout>
+      <Navbar />
+      <Main role="main">
+        <Header>
+          <h1 sx={{ fontFamily: "header" }}>Hello World!</h1>
+        </Header>
+        <Container>{children}</Container>
+        <FooterTheme role="contentinfo">
+          <Footer />
+        </FooterTheme>
+      </Main>
+    </ThemeLayout>
+  )
+}
+
+export default Layout
+```
+
+This is how you would use the individual styles if you wish to have more controls over styles.
+
+```javascript
+import React from "react"
+import { Styled } from "theme-ui"
+
+const Navbar = () => {
+  return (
+    <nav role="navigation">
+      <Styled.ul>
+        <Styled.li>
+          <a href="/">Home</a>
+        </Styled.li>
+        <Styled.li>
+          <a href="/hello">Hello</a>
+        </Styled.li>
+        <Styled.li>
+          <a href="/world">World</a>
+        </Styled.li>
+      </Styled.ul>
+    </nav>
+  )
+}
+
+export default Navbar
+```

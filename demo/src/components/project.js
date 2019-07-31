@@ -1,6 +1,5 @@
 import React from "react"
 import { Header } from "theme-ui"
-import { Styled } from "theme-ui"
 
 const Project = ({ name, tagline, body }) => (
   <div className="project">

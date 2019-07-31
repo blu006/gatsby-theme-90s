@@ -7,7 +7,6 @@ import {
   Container,
   Footer as FooterTheme,
 } from "theme-ui"
-import { Styled } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import SEO from "./SEO"
 import Navbar from "./navbar"
