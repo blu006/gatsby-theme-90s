@@ -24,7 +24,9 @@ const Navbar = () => {
 
           return (
             <li key={project.name}>
-              <a href={link}>{project.name}</a>
+              <strong>
+                <a href={link}>{project.name}</a>
+              </strong>
             </li>
           )
         })}
