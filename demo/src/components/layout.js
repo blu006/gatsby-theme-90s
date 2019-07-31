@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <Main role="main">
         <Header>
-          <h1 sx={{ fontFamily: "header" }}>{data.site.siteMetadata.title}</h1>
+          <h1>{data.site.siteMetadata.title}</h1>
         </Header>
         <Container>{children}</Container>
         <FooterTheme role="contentinfo">

@@ -2,6 +2,7 @@ const backgroundGradient = ["#3000ce", "#6363ff"]
 
 const heading = {
   color: "primary",
+  fontFamily: "body",
   fontWeight: "normal",
   lineHeight: "heading",
   margin: 0,
@@ -76,6 +77,7 @@ export const theme = {
       padding: "3",
       h1: {
         ...heading,
+        fontFamily: "header",
       },
     },
     Main: {
@@ -115,6 +117,7 @@ export const theme = {
     },
     h1: {
       ...heading,
+      fontFamily: "header",
       fontSize: 5,
       marginTop: 3,
       background: "transparent",
