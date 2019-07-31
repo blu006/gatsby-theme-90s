@@ -13,6 +13,9 @@ import SEO from "./SEO"
 import Navbar from "./navbar"
 import Footer from "./footer"
 
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -40,7 +43,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <Main role="main">
         <Header>
-          <Styled.h1>{data.site.siteMetadata.title}</Styled.h1>
+          <h1 sx={{ fontFamily: "header" }}>{data.site.siteMetadata.title}</h1>
         </Header>
         <Container>{children}</Container>
         <FooterTheme role="contentinfo">

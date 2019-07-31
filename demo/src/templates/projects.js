@@ -10,6 +10,7 @@ const ProjectsTemplate = () => {
         nodes {
           id
           name
+          tagline
           body
           link
           image

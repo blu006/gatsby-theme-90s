@@ -15,10 +15,11 @@ exports.sourceNodes = ({ actions }) => {
     type Project implements Node @dontInfer {
       id: ID!
       name: String!
-      body: String!
+      tagline: String
+      body: String
       slug: String!
       link: String
-      image: String!
+      image: String
     }
   `)
 }

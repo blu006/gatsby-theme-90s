@@ -5,7 +5,6 @@ const heading = {
   fontWeight: "normal",
   lineHeight: "heading",
   margin: 0,
-  padding: 3,
   textShadow: "2px 2px 1px black",
   letterSpacing: "2px",
 }
@@ -31,7 +30,7 @@ export const theme = {
   },
   sizes: {
     default: "90vw",
-    max: "540px",
+    max: "600px",
     widthMax: "100%",
   },
   styles: {
@@ -73,12 +72,14 @@ export const theme = {
     Header: {
       gridArea: "header",
       display: "flex",
-      justifyContent: "center",
+      flexDirection: "column",
+      padding: "3",
       h1: {
-        fontFamily: "header",
+        ...heading,
       },
     },
     Main: {
+      color: "#fff",
       display: "grid",
       gridTemplateColumns: "auto",
       gridTemplateRows: "0.5fr 4fr auto 2fr",
@@ -99,7 +100,7 @@ export const theme = {
     },
     Footer: {
       gridArea: "footer",
-      maxWidth: "600px",
+      maxWidth: "max",
       margin: "0 auto",
       ul: {
         display: "flex",

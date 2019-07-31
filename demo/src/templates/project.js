@@ -7,6 +7,7 @@ export const query = graphql`
   query($projectID: String!) {
     project(id: { eq: $projectID }) {
       name
+      tagline
       body
       link
       slug

@@ -1,12 +1,18 @@
 import React from "react"
+import { Header } from "theme-ui"
+import { Styled } from "theme-ui"
 
-const Project = ({ name, body, link }) => (
+const Project = ({ name, tagline, body }) => (
   <div className="project">
-    <header>
+    <Header>
       <h1>{name}</h1>
-    </header>
+      <p>{tagline}</p>
+    </Header>
     <div className="project-details">
-      <p>{body}</p>
+      <div
+        contentEditable="false"
+        dangerouslySetInnerHTML={{ __html: body }}
+      ></div>
     </div>
   </div>
 )

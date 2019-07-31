@@ -9,6 +9,10 @@ export const theme = {
     ...baseTheme.styles,
     Layout: {
       ...baseTheme.styles.Layout,
+      nav: {
+        ...baseTheme.styles.Layout.nav,
+        paddingTop: ["40px", "20px"],
+      },
       ".tiny-banner": {
         color: "primary",
         fontSize: "12px",
@@ -20,9 +24,11 @@ export const theme = {
         letterSpacing: "2px",
         background: baseTheme.colors.navbar,
       },
-      nav: {
-        ...baseTheme.styles.Layout.nav,
-        paddingTop: ["40px", "20px"],
+      ".project-details": {
+        paddingLeft: "3",
+        maxWidth: "600px",
+        margin: "0 auto",
+        lineHeight: "body",
       },
     },
     Footer: {
@@ -35,12 +41,10 @@ export const theme = {
     },
     p: {
       ...baseTheme.styles.p,
-      color: "#fff",
       display: "inline-block",
     },
     a: {
       ...baseTheme.styles.a,
-      color: "#fff",
       display: "inline-block",
     },
   },
