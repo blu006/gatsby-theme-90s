@@ -81,7 +81,7 @@ export const theme = {
     Main: {
       display: "grid",
       gridTemplateColumns: "auto",
-      gridTemplateRows: "1/2fr 4fr auto 2fr",
+      gridTemplateRows: "0.5fr 4fr auto 2fr",
       gridTemplateAreas: `"header" "container" "." "footer"`,
       margin: "0 auto",
       maxWidth: "widthMax",
