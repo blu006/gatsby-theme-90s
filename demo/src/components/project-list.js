@@ -10,7 +10,7 @@ const ProjectList = ({ projects }) => (
       {projects.map(project => (
         <Styled.li key={project.id}>
           <img src={project.image} alt={project.name} />
-          <div class="project-info">
+          <div className="project-info">
             <Styled.h3>{project.name}</Styled.h3>
             {project.link ? (
               <Styled.a href={project.link} sx={{ padding: "16px" }}>

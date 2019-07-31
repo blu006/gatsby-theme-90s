@@ -23,7 +23,7 @@ const Navbar = () => {
           const link = project.link ? project.link : project.slug
 
           return (
-            <li>
+            <li key={project.name}>
               <a href={link}>{project.name}</a>
             </li>
           )
