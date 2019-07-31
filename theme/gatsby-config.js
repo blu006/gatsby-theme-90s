@@ -1,22 +1,8 @@
-module.exports = ({ contentPath = "data", basePath = "/" }) => ({
+module.exports = () => ({
   siteMetadata: {
     title: "Gatsby Theme 90s",
     author: `Jackie Luc`,
-    description: `90s is a Gatsby Theme with a flash from the past.`,
+    description: `gatsby-theme-90s is a Gatsby Theme with some flair from the old web.`,
   },
-  plugins: [
-    "gatsby-plugin-theme-ui",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: contentPath,
-      },
-    },
-    {
-      resolve: "gatsby-transformer-yaml",
-      options: {
-        typeName: "Project",
-      },
-    },
-  ],
+  plugins: ["gatsby-plugin-theme-ui"],
 })

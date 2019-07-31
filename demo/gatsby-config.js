@@ -14,9 +14,20 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "data",
+      },
+    },
+    {
+      resolve: "gatsby-transformer-yaml",
+      options: {
+        typeName: "Project",
+      },
+    },
+    {
       resolve: "gatsby-theme-90s",
       options: {
-        contentPath: "data",
         basePath: "/",
       },
     },
