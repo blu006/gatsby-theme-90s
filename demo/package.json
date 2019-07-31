@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gatsby": "^2.13.1",
+    "gatsby-plugin-google-analytics": "^2.1.6",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-theme-90s": "*",
     "react": "^16.8.6",
