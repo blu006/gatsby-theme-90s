@@ -5,12 +5,13 @@ import {
   Header,
   Main,
   Container,
-  Footer,
+  Footer as FooterTheme,
 } from "theme-ui"
 import { Styled } from "theme-ui"
 import { graphql, useStaticQuery } from "gatsby"
 import SEO from "./SEO"
 import Navbar from "./navbar"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,13 +38,14 @@ const Layout = ({ children }) => {
         the official demo website of the Gatsby Theme 90s
       </p>
       <Navbar />
-      <Main>
+      <Main role="main">
         <Header>
           <Styled.h1>{data.site.siteMetadata.title}</Styled.h1>
         </Header>
-        {/* <Sidebar /> */}
         <Container>{children}</Container>
-        <Footer />
+        <FooterTheme>
+          <Footer />
+        </FooterTheme>
       </Main>
     </ThemeLayout>
   )

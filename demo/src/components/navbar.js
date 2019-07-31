@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Styled } from "theme-ui"
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
@@ -17,8 +18,8 @@ const Navbar = () => {
   const projects = data.allProject.nodes
 
   return (
-    <nav className="Navbar" role="navigation">
-      <ul>
+    <nav role="navigation">
+      <Styled.ul>
         {projects.map(project => {
           const link = project.link ? project.link : project.slug
 
@@ -30,7 +31,7 @@ const Navbar = () => {
             </li>
           )
         })}
-      </ul>
+      </Styled.ul>
     </nav>
   )
 }

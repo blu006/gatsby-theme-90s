@@ -1,5 +1,15 @@
 const backgroundGradient = ["#3000ce", "#6363ff"]
 
+const heading = {
+  color: "primary",
+  fontWeight: "normal",
+  lineHeight: "heading",
+  margin: 0,
+  padding: 3,
+  textShadow: "2px 2px 1px black",
+  letterSpacing: "2px",
+}
+
 export const theme = {
   space: [0, 4, 8, 16, 20, 32],
   fonts: {
@@ -30,6 +40,11 @@ export const theme = {
       fontFamily: "body",
       fontSize: 1,
       lineHeight: "body",
+      display: "block",
+      height: "100%",
+      background: `linear-gradient(to left, ${backgroundGradient[0]}, ${
+        backgroundGradient[1]
+      })`,
       nav: {
         backgroundColor: "navbar",
         color: "primary",
@@ -56,6 +71,7 @@ export const theme = {
       },
     },
     Header: {
+      gridArea: "header",
       display: "flex",
       justifyContent: "center",
       h1: {
@@ -63,14 +79,16 @@ export const theme = {
       },
     },
     Main: {
-      background: `linear-gradient(to left, ${backgroundGradient[0]}, ${
-        backgroundGradient[1]
-      })`,
+      display: "grid",
+      gridTemplateColumns: "auto",
+      gridTemplateRows: "1/2fr 4fr auto 2fr",
+      gridTemplateAreas: `"header" "container" "." "footer"`,
       margin: "0 auto",
       maxWidth: "widthMax",
       width: "widthMax",
     },
     Container: {
+      gridArea: "container",
       padding: 3,
       ul: {
         display: "grid",
@@ -80,77 +98,48 @@ export const theme = {
       },
     },
     Footer: {
-      padding: 3,
+      gridArea: "footer",
+      padding: "0",
+      display: "flex",
+      justifyContent: "center",
+      ul: {
+        display: "flex",
+        justifyContent: "space-evenly",
+        li: {
+          listStyle: "none",
+          a: {
+            color: "#fff",
+          },
+        },
+      },
     },
     h1: {
-      color: "primary",
+      ...heading,
       fontSize: 5,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
       marginTop: 3,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
       background: "transparent",
     },
     h2: {
-      color: "primary",
+      ...heading,
       fontSize: 4,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
-      marginTop: 0,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
     },
     h3: {
-      color: "primary",
+      ...heading,
       fontSize: 3,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
-      marginTop: 0,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
     },
     h4: {
-      color: "primary",
+      ...heading,
       fontSize: 2,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
-      marginTop: 0,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
     },
     h5: {
-      color: "primary",
+      ...heading,
       fontSize: 1,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
-      marginTop: 0,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
     },
     h6: {
-      color: "primary",
+      ...heading,
       fontSize: 0,
-      fontWeight: "normal",
-      lineHeight: "heading",
-      margin: 0,
-      padding: 3,
-      marginTop: 0,
-      textShadow: "2px 2px 1px black",
-      letterSpacing: "2px",
     },
     ul: {
-      listStyle: "none",
       padding: 0,
     },
     li: {
@@ -167,6 +156,7 @@ export const theme = {
         paddingRight: 2,
         maxWidth: "50px",
         height: "100%",
+        maxHeight: "80px",
       },
     },
     a: {

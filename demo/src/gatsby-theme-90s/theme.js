@@ -20,12 +20,28 @@ export const theme = {
         letterSpacing: "2px",
         background: baseTheme.colors.navbar,
       },
+      nav: {
+        ...baseTheme.styles.Layout.nav,
+        paddingTop: ["40px", "20px"],
+      },
     },
-    Main: {
-      ...baseTheme.styles.Main,
+    Footer: {
+      ...baseTheme.styles.Footer,
+      ".theme-details": {
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+      },
     },
-    Container: {
-      ...baseTheme.styles.Container,
+    p: {
+      ...baseTheme.styles.p,
+      color: "#fff",
+      display: "inline-block",
+    },
+    a: {
+      ...baseTheme.styles.a,
+      color: "#fff",
+      display: "inline-block",
     },
   },
 }
