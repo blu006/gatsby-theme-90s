@@ -45,25 +45,38 @@ import {
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Layout = ({ children }) => {
-  return (
-    <ThemeLayout>
-      <Navbar />
-      <Main role="main">
-        <Header>
-          <h1 sx={{ fontFamily: "header" }}>Hello World!</h1>
-        </Header>
-        <Container>{children}</Container>
-        <FooterTheme role="contentinfo">
-          <Footer />
-        </FooterTheme>
-      </Main>
-    </ThemeLayout>
-  )
-}
+const Layout = () => (
+  <ThemeLayout>
+    <Navbar />
+    <Main role="main">
+      <Header>
+        <h1 sx={{ fontFamily: "header" }}>Hello World!</h1>
+      </Header>
+      <Container>
+        <ul>
+          <li>
+            <img src="hello.jpg" alt="hello-tag" />
+            <h3>Hello</h3>
+            <a href="www.hello.com">Hello</a>
+          </li>
+          <li>
+            <img src="world.jpg" alt="world-tag" />
+            <h3>World</h3>
+            <a href="www.world.com">World</a>
+          </li>
+        </ul>
+      </Container>
+      <FooterTheme role="contentinfo">
+        <Footer />
+      </FooterTheme>
+    </Main>
+  </ThemeLayout>
+)
 
 export default Layout
 ```
+
+### Individual Styling
 
 This is how you would use the individual styles if you wish to have more controls over styles.
 
@@ -90,4 +103,35 @@ const Navbar = () => {
 }
 
 export default Navbar
+```
+
+## Theme Component Shadowing
+
+Please follow this [guide](https://egghead.io/lessons/gatsby-use-component-shadowing-to-override-gatsby-theme-components) to override or extend this `gatsby-theme-90s`.
+
+### Example
+
+```javascript
+/**
+ * ! NOTE
+ *
+ * Shadow the folder structure of the theme: ./src/gatsby-theme-90s/theme.js
+ */
+
+import { theme as baseTheme } from "gatsby-theme-90s/src/theme"
+
+export const theme = {
+  ...baseTheme,
+  colors: {
+    ...baseTheme.colors,
+    primary: "tomato", // Change the primary colour
+  },
+  styles: {
+    ...baseTheme.styles,
+    p: {
+      ...baseTheme.styles.p,
+      fontWeight: "bold", // Change the font weight of "p" tag
+    },
+  },
+}
 ```
