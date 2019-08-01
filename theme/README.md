@@ -8,13 +8,13 @@ Check out the [live demo](https://gatsby-theme-90s.netlify.com)!
 
 To use this theme in your Gatsby sites, follow these instructions:
 
-1. Install the theme
+1 - Install the theme
 
 ```sh
 npm install --save gatsby-theme-90s
 ```
 
-2. Add the theme to your `gatsby-config.js`:
+2 - Add the theme to your `gatsby-config.js`:
 
 ```js
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
 }
 ```
 
-3. Start your site
+3 - Start your site
 
 ```sh
 gatsby develop
