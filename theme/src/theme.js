@@ -98,6 +98,34 @@ export const theme = {
         gridGap: "25px",
         gridTemplateColumns: ["1fr", "1fr 1fr"],
         gridTemplateRows: "auto",
+        li: {
+          display: "flex",
+          flexDirection: ["column", "row"],
+          padding: 2,
+          "&:focus-within, &:hover": {
+            backgroundColor: "hover",
+            p: {
+              color: "gray.0",
+            },
+          },
+          h3: {
+            ...heading,
+            fontSize: 3,
+            marginBottom: 2,
+          },
+          img: {
+            paddingRight: 2,
+            maxWidth: "50px",
+            height: "100%",
+            maxHeight: "80px",
+          },
+        },
+        a: {
+          color: "#fff",
+          "&:visited": {
+            color: "gray.2",
+          },
+        },
       },
     },
     Footer: {
@@ -144,29 +172,6 @@ export const theme = {
     },
     ul: {
       padding: 0,
-    },
-    li: {
-      display: "flex",
-      flexDirection: ["column", "row"],
-      padding: 2,
-      "&:focus-within, &:hover": {
-        backgroundColor: "hover",
-        p: {
-          color: "gray.0",
-        },
-      },
-      img: {
-        paddingRight: 2,
-        maxWidth: "50px",
-        height: "100%",
-        maxHeight: "80px",
-      },
-    },
-    a: {
-      color: "#fff",
-      "&:visited": {
-        color: "gray.2",
-      },
     },
   },
 }
