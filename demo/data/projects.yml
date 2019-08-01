@@ -12,6 +12,6 @@
   image: images/News.gif
 
 - name: WHY???
-  tagline: Why did I built this theme and what was the motivation?
+  tagline: Why did I build this theme and what was the motivation?
   body: This project was built for <a href="https://www.gatsbyjs.org">Gatsby's</a> "Theme Jam" to mark the launch of Gatsby Themes! This theme was heavily inspired by <a href="https://www.webdesignmuseum.org/gallery/best-buy-1997">Best Buy's</a> website theme of 1990s. It is a homage to the roots of the web and a reminder of how far the web has come.
   image: images/Sweep.gif
