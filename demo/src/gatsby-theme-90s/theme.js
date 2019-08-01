@@ -33,6 +33,9 @@ export const theme = {
     },
     Footer: {
       ...baseTheme.styles.Footer,
+      ".footer-nav": {
+        flexDirection: ["column", "row"],
+      },
       ".theme-details": {
         textAlign: "center",
         display: "flex",

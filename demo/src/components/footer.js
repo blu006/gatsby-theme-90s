@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <div>
       <hr />
-      <ul>
+      <ul className="footer-nav">
         {projects.map(project => {
           const link = project.link ? project.link : project.slug
 
