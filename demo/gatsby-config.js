@@ -38,11 +38,6 @@ module.exports = {
         head: true,
       },
     },
-    {
-      resolve: "gatsby-plugin-simple-analytics",
-      options: {
-        domain: "gatsby-theme-90s.netlify.com",
-      },
-    },
+    "gatsby-plugin-simple-analytics",
   ],
 }
