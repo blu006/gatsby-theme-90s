@@ -31,6 +31,18 @@ export const theme = {
         lineHeight: "body",
       },
     },
+    Container: {
+      ...baseTheme.styles.Container,
+      ul: {
+        ...baseTheme.styles.Container.ul,
+        a: {
+	  ...baseTheme.styles.Container.ul.a,
+          "&:visited": {
+            color: "primary",
+	  },
+	},
+      },
+    },
     Footer: {
       ...baseTheme.styles.Footer,
       ".footer-nav": {
